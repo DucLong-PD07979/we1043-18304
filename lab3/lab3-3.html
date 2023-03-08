@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+        <style>
+            *{
+                box-sizing: border-box;
+            }
+            body {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                height: 100vh;
+            }
+            .caculator-container {
+                max-width: 300px;
+                width: 100%;
+                border-radius: 4px;
+                border: 1px solid #15253275;
+                padding: 6px;
+            }
+            .screen {
+                height: 30px;
+                border: 1px solid #15253275;
+                border-radius: 2px;
+                margin-bottom: 12px;
+                font-size: 23px;
+                width: 100%;
+                padding: 0 14px;
+                line-height: 30px;
+            }
+
+            .caculator-body {
+                display: flex;
+                flex-wrap: wrap;
+            }
+
+            button {
+                flex: 0 0 calc(25% - 4px);
+                width: 100%;
+                margin: 2px;
+                padding: 8px 0;
+                cursor: pointer;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="caculator-container">
+            <div class="screen"></div>
+            <div class="caculator-body">
+                <button value="7" onclick="toan_hang(value)">7</button>
+                <button value="8" onclick="toan_hang(value)">8</button>
+                <button value="9" onclick="toan_hang(value)">9</button>
+                <button value="+" onclick="toan_tu(value)">+</button>
+                <button value="4" onclick="toan_hang(value)">4</button>
+                <button value="5" onclick="toan_hang(value)">5</button>
+                <button value="6" onclick="toan_hang(value)">6</button>
+                <button value="-" onclick="toan_tu(value)">-</button>
+                <button value="1" onclick="toan_hang(value)">1</button>
+                <button value="2" onclick="toan_hang(value)">2</button>
+                <button value="3" onclick="toan_hang(value)">3</button>
+                <button value="x" onclick="toan_tu(value)">x</button>
+                <button value="0" onclick="toan_hang(value)">0</button>
+                <button value="c" onclick="lam_lai()">c</button>
+                <button value="=" onclick="thuHien()">=</button>
+                <button value=":" onclick="toan_tu(value)">:</button>
+            </div>
+        </div>
+        <script src="./app.js"></script>
+    </body>
+</html>
