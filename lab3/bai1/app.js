@@ -5,13 +5,13 @@ const tbWithSwitchCase = () => {
     let diemTrungBinh = tinhDiemTrungBinh();
     switch (true) {
         case diemTrungBinh >= 9 && diemTrungBinh <= 10:
-            console.log("giỏi");
+            alert("học lực : giỏi");
             break;
         case diemTrungBinh >= 7 && diemTrungBinh <= 8:
-            console.log("khá");
+            alert("học lực : khá");
             break;
         case diemTrungBinh >= 5 && diemTrungBinh < 7:
-            console.log("trung bình");
+            alert("học lực : trung bình");
             break;
         default:
     }
@@ -20,11 +20,11 @@ const tbWithSwitchCase = () => {
 const tbWithIfElse = () => {
     let diemTrungBinh = tinhDiemTrungBinh();
     if (diemTrungBinh >= 9 && diemTrungBinh <= 10) {
-        console.log("giỏi");
+        alert("học lực : giỏi");
     } else if (diemTrungBinh >= 7 && diemTrungBinh <= 8) {
-        console.log("khá");
+        alert("học lực : khá");
     } else {
-        console.log("trung bình");
+        alert("học lực : trung bình");
     }
 };
 
