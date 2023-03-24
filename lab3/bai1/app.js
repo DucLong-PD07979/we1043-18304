@@ -62,7 +62,7 @@ let checkValidNumber = (number) => {
     } while (isRun);
 };
 
-let choice = prompt("mời bạn chon chương trình", 0);
+let choice = prompt("mời bạn chon chương trình: 1 - tính điểm tb với sw 2 - tính điểm tb với if", 0);
 
 switch (parseInt(choice)) {
     case 1:
