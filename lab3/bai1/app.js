@@ -32,24 +32,32 @@ const tinhDiemTrungBinh = () => {
     let toan = prompt("mời bạn nhập điểm toán");
     checkValidNumber(toan)
         ? parseFloat(toan)
-        : (toan = prompt("mời bạn nhập lại điểm toán"));
+        : (toan = inputAgainPoint("toán"));
+
     let ly = prompt("mời bạn nhập điểm lý");
     checkValidNumber(ly)
         ? parseFloat(ly)
-        : (ly = prompt("mời bạn nhập lại điểm ly"));
+        : (ly = inputAgainPoint("ly"));
+
     let hoa = prompt("mời bạn nhập điểm hoa");
     checkValidNumber(hoa)
         ? parseFloat(hoa)
-        : (hoa = prompt("mời bạn nhập lại điểm hoa"));
+        : (hoa = inputAgainPoint("hóa"));
+
     let sinh = prompt("mời bạn nhập điểm sinh");
     checkValidNumber(sinh)
         ? parseFloat(sinh)
-        : (sinh = prompt("mời bạn nhập lại điểm sinh"));
+        : (sinh = inputAgainPoint("sinh"));
+        
     let tong =
         parseFloat(toan) + parseFloat(ly) + parseFloat(hoa) + parseFloat(sinh);
     let tb = tong / 4;
     return tb;
 };
+
+let inputAgainPoint = (mon) => {
+    return prompt(`mời bạn nhập lại điểm môn ${mon}`);
+}
 
 let checkValidNumber = (number) => {
     let isRun = true;
