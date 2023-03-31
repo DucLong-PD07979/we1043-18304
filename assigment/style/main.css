@@ -352,6 +352,10 @@ header {
     background-color: var(--white-color);
 }
 
+.service-item:hover {
+    background-color: #888d9c37;
+}
+
 @media screen and (max-width: 868px) {
     .service-item {
         margin-top: 14px;
@@ -747,8 +751,8 @@ header {
     background-repeat: no-repeat;
     background-size: cover;
     margin-top: 130px;
-    padding-top: 300px;
-    padding-bottom: 360px;
+    padding-top: 250px;
+    padding-bottom: 100px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -758,4 +762,46 @@ header {
     color: var(--white-color);
     font-size: 1.6rem;
     padding-top: 100px;
+}
+
+#footer p {
+    color: var(--white-color);
+    font-size: 1.4rem;
+    line-height: var(--lineheightTextDes);
+}
+
+#footer a {
+    color: var(--white-color);
+}
+
+.footer-widget ul {
+    display: inline;
+    max-width: 40%;
+    float: left;
+    padding-left: 0;
+    margin-right: 20px;
+}
+
+.footer-widget ul li a {
+    color: var(--white-color);
+    font-size: 1.4rem;
+    margin: 8px 0;
+    display: inline-block;
+}
+
+.copyright-text {
+    margin-top: 50px;
+    text-align: center;
+}
+
+@media screen and (max-width: 686px) {
+    #footer h4 {
+        color: var(--white-color);
+        font-size: 1.6rem;
+        padding-top: 40px;
+    }
+
+     #footer .footer-widget h4.padding-150 {
+        padding-top: 150px;
+    }
 }
