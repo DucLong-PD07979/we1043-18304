@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+        <style>
+            #myVideo {
+                width: 100%;
+                height: auto;
+            }
+
+            button {
+                margin-right: 10px;
+            }
+        </style>
+    </head>
+    <body>
+        <video id="myVideo" src="./Thu-Cuoi-Yanbi-Mr-T-Hang-BingBoong.mp3" controls></video>
+        <button onclick="playVideo()">Play</button>
+        <button onclick="pauseVideo()">Pause</button>
+        <button onclick="stopVideo()">Stop</button>
+        <button onclick="increaseVolume()">+</button>
+        <button onclick="decreaseVolume()">-</button>
+        <button onclick="toggleLoop()">Loop</button>
+    </body>
+    <script>
+        var video = document.getElementById("myVideo");
+
+        function playVideo() {
+            video.play();
+        }
+
+        function pauseVideo() {
+            video.pause();
+        }
+
+        function stopVideo() {
+            video.pause();
+            video.currentTime = 0;
+        }
+
+        function increaseVolume() {
+            if (video.volume < 1.0) {
+                video.volume += 0.1;
+            }
+        }
+
+        function decreaseVolume() {
+            if (video.volume > 0.0) {
+                video.volume -= 0.1;
+            }
+        }
+
+        function toggleLoop() {
+            video.loop = !video.loop;
+        }
+    </script>
+</html>
